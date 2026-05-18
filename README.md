@@ -66,13 +66,17 @@ Configure custom haptic vibration feedback for every button press. Features a li
 
 ### 📱 Mobile Dashboard & Settings
 
-<<<<<<< HEAD
-=======
-| &nbsp; | &nbsp; | &nbsp; | &nbsp; |
->>>>>>> 28736395b6eb43f164bd10970d9165e69761f372
-| ![Preview 1](assets/screens/preview/mobile/01.png) | ![Preview 2](assets/screens/preview/mobile/02.png) | ![Preview 3](assets/screens/preview/mobile/03.png) | ![Preview 4](assets/screens/preview/mobile/04.png) |
-| :---: | :---: | :---: | :---: |
-| ![Preview 5](assets/screens/preview/mobile/05.png) | ![Preview 6](assets/screens/preview/mobile/06.png) | ![Preview 7](assets/screens/preview/mobile/07.png) | ![Preview 8](assets/screens/preview/mobile/08.png) |
+<div align="center">
+  <img src="assets/screens/preview/mobile/01.png" width="23%" />
+  <img src="assets/screens/preview/mobile/02.png" width="23%" />
+  <img src="assets/screens/preview/mobile/03.png" width="23%" />
+  <img src="assets/screens/preview/mobile/04.png" width="23%" />
+  <br />
+  <img src="assets/screens/preview/mobile/05.png" width="23%" />
+  <img src="assets/screens/preview/mobile/06.png" width="23%" />
+  <img src="assets/screens/preview/mobile/07.png" width="23%" />
+  <img src="assets/screens/preview/mobile/08.png" width="23%" />
+</div>
 
 > *All high-resolution preview assets, logos, and promotional video recordings can be found in the [`assets/`](assets/) directory.*
 
