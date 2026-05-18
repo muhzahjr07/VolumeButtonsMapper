@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory 
+        app:title="Advanced Options"
+        app:layout="@layout/preference_category_glassmorphic">
+
+        <Preference
+            app:key="open_accessibility"
+            app:title="Accessibility Settings"
+            app:summary="Open device settings to manage the Volume Buttons Mapper service"
+            app:layout="@layout/preference_glassmorphic" />
+
+        <SwitchPreferenceCompat
+            app:key="bypass_volume_dialog"
+            app:title="Bypass while Volume Panel is Open"
+            app:summary="Temporarily disable custom actions when the system volume dialog is visible"
+            app:defaultValue="false"
+            app:layout="@layout/preference_glassmorphic" />
+
+       <Preference
+            app:key="open_camera_perm"
+            app:title="Camera Permission"
+            app:summary="Required for the flashlight feature"
+            app:layout="@layout/preference_glassmorphic" />
+
+        <Preference
+            app:key="open_dnd_perm"
+            app:title="Do Not Disturb Access"
+            app:summary="Required for the DND toggle feature"
+            app:layout="@layout/preference_glassmorphic" />
+        
+        <Preference
+            app:key="open_write_settings_perm"
+            app:title="Modify System Settings Permission"
+            app:summary="Required for screen brightness and auto-rotate features"
+            app:layout="@layout/preference_glassmorphic" />
+
+        <Preference
+            app:key="open_bluetooth_perm"
+            app:title="Bluetooth Permission"
+            app:summary="Required for direct Bluetooth toggle feature"
+            app:layout="@layout/preference_glassmorphic" />
+        
+        <Preference
+            app:key="reset_defaults"
+            app:title="Reset to Default"
+            app:summary="Clear all settings and revert to normal phone defaults"
+            app:layout="@layout/preference_glassmorphic" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory 
+        app:title="Vibration Settings"
+        app:layout="@layout/preference_category_glassmorphic">
+        
+        <SwitchPreferenceCompat
+            app:key="vibrate_enable"
+            app:title="Enable Haptic Feedback"
+            app:summary="Vibrate slightly when an action is triggered."
+            app:defaultValue="false"
+            app:layout="@layout/preference_glassmorphic" />
+        
+        <SeekBarPreference
+            app:key="vibrate_intensity"
+            app:dependency="vibrate_enable"
+            app:title="Vibration Intensity"
+            app:summary="Duration of the vibration in milliseconds."
+            android:max="200"
+            app:min="10"
+            app:updatesContinuously="true"
+            app:defaultValue="50" />
+    </PreferenceCategory>
+</PreferenceScreen>

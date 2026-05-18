@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="button_entries">
+        <item>Volume Up</item>
+        <item>Volume Down</item>
+    </string-array>
+    <string-array name="button_values">
+        <item>volume_up</item>
+        <item>volume_down</item>
+    </string-array>
+
+    <string-array name="action_entries">
+        <item>No Action</item>
+        <item>Normal Volume</item>
+        <item>Back</item>
+        <item>Home</item>
+        <item>Recents</item>
+        <item>Lock Screen</item>
+        <item>Take Screenshot</item>
+        <item>Voice Command</item>
+        <item>Power Menu</item>
+        <item>Web Search</item>
+
+        <item>Toggle Wi-Fi</item>
+        <item>Toggle Bluetooth</item>
+        <item>Toggle DND (Do Not Disturb)</item>
+        <item>Toggle Flashlight</item>
+        <item>Toggle Auto Rotate</item>
+        <item>Toggle Auto Brightness</item>
+        <item>Increase Brightness (+)</item>
+        <item>Decrease Brightness (-)</item>
+        <item>Brightness 0%</item>
+        <item>Brightness 50%</item>
+        <item>Brightness 100%</item>
+        <item>Toggle Notification Panel</item>
+        <item>Toggle Quick Settings Panel</item>
+
+        <item>Open Volume Control</item>
+        <item>Volume Up</item>
+        <item>Volume Down</item>
+        <item>Next Track</item>
+        <item>Previous Track</item>
+        <item>Toggle Play/Pause</item>
+        <item>Doomscroll Up (Swipe Up)</item>
+        <item>Doomscroll Down (Swipe Down)</item>
+
+        <item>Launch Volume Buttons Mapper</item>
+        <item>Switch off application for 10 Secs</item>
+        <item>Close All Apps (Clear Recents)</item>
+
+        <item>Open Camera</item>
+        <item>Open Dialer</item>
+        <item>Open Browser</item>
+        <item>Open Settings</item>
+    </string-array>
+    
+    <string-array name="action_values">
+        <item>none</item>
+        <item>normal</item>
+        <item>back</item>
+        <item>home</item>
+        <item>recents</item>
+        <item>lock</item>
+        <item>screenshot</item>
+        <item>voice_command</item>
+        <item>power</item>
+        <item>web_search</item>
+
+        <item>wifi</item>
+        <item>bluetooth</item>
+        <item>dnd</item>
+        <item>flashlight</item>
+        <item>auto_rotate</item>
+        <item>auto_brightness</item>
+        <item>brightness_plus</item>
+        <item>brightness_minus</item>
+        <item>brightness_0</item>
+        <item>brightness_50</item>
+        <item>brightness_100</item>
+        <item>notifications</item>
+        <item>quick_settings</item>
+
+        <item>volume_control</item>
+        <item>volume_up</item>
+        <item>volume_down</item>
+        <item>media_next</item>
+        <item>media_previous</item>
+        <item>media_play_pause</item>
+        <item>doomscroll_up</item>
+        <item>doomscroll_down</item>
+
+        <item>launch_this_app</item>
+        <item>pause_app_10s</item>
+        <item>close_all_apps</item>
+
+        <item>camera</item>
+        <item>dialer</item>
+        <item>browser</item>
+        <item>settings</item>
+    </string-array>
+
+    <string-array name="theme_entries">
+        <item>Lush Green &amp; Gold Gradient (Default)</item>
+        <item>Midnight Blue &amp; Cyan Gradient</item>
+        <item>Purple Nebula &amp; Violet Gradient</item>
+        <item>Crimson Sunset &amp; Ruby Gradient</item>
+        <item>Emerald Dream &amp; Teal Gradient</item>
+        <item>Solid Pitch Black (OLED Friendly)</item>
+        <item>Solid Dark Slate Gray</item>
+        <item>Solid Deep Navy Blue</item>
+    </string-array>
+
+    <string-array name="theme_values">
+        <item>default_gradient</item>
+        <item>midnight_blue</item>
+        <item>purple_nebula</item>
+        <item>crimson_sunset</item>
+        <item>emerald_dream</item>
+        <item>solid_black</item>
+        <item>solid_gray</item>
+        <item>solid_navy</item>
+    </string-array>
+</resources>

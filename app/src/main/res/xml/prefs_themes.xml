@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory 
+        app:title="App Themes &amp; Backgrounds"
+        app:layout="@layout/preference_category_glassmorphic">
+        
+        <ListPreference
+            app:key="app_bg_theme"
+            app:title="Select Background Theme"
+            app:summary="Choose a rich color palette or gradient that complements the glassmorphic UI."
+            app:entries="@array/theme_entries"
+            app:entryValues="@array/theme_values"
+            app:defaultValue="default_gradient"
+            app:layout="@layout/preference_glassmorphic" />
+            
+    </PreferenceCategory>
+</PreferenceScreen>

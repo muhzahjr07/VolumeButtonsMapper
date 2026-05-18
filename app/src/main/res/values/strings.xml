@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Volume Buttons Mapper</string>
+    <string name="accessibility_service_name">Volume Buttons Mapper</string>
+    <string name="accessibility_service_description">This service maps your Volume Up button to lock the screen or show the power menu. It needs Accessibility permissions to detect button presses.</string>
+</resources>

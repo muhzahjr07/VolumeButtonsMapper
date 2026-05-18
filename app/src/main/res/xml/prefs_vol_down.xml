@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory 
+        app:title="Volume Down Actions (While Screen ON)"
+        app:layout="@layout/preference_category_glassmorphic">
+        
+        <Preference
+            app:key="down_single"
+            app:title="Single Press action"
+            app:summary="Normal System Behavior"
+            app:layout="@layout/preference_glassmorphic" />
+
+        <Preference
+            app:key="down_long"
+            app:title="Long Press action"
+            app:summary="Do Nothing"
+            app:layout="@layout/preference_glassmorphic" />
+
+        <SwitchPreferenceCompat
+            app:key="down_double_enable"
+            app:title="Enable Double Press"
+            app:summary="This option slows down detecting Single Press"
+            app:defaultValue="false"
+            app:layout="@layout/preference_glassmorphic" />
+
+        <Preference
+            app:key="down_double"
+            app:dependency="down_double_enable"
+            app:title="Double Press action"
+            app:summary="Do Nothing"
+            app:layout="@layout/preference_glassmorphic" />
+    </PreferenceCategory>
+
+    <PreferenceCategory 
+        app:title="Volume Down Actions (While screen OFF)"
+        app:layout="@layout/preference_category_glassmorphic">
+        
+        <Preference
+            app:key="down_off"
+            app:title="Screen OFF action"
+            app:summary="Do Nothing"
+            app:layout="@layout/preference_glassmorphic" />
+    </PreferenceCategory>
+</PreferenceScreen>

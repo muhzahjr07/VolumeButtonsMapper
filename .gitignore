@@ -1,0 +1,24 @@
+# Built application files
+*.apk
+*.aab
+*.ap_
+*.hprof
+
+# Android Studio / IntelliJ / Gradle
+.idea/
+.gradle/
+build/
+app/build/
+local.properties
+*.iml
+*.iws
+
+# OS specific files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Keystore / signing files
+*.jks
+*.keystore
+*.properties.local
