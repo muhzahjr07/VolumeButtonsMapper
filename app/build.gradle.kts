@@ -11,8 +11,8 @@ android {
         applicationId = "risk.tech.volumebuttons"
         minSdk = 28 // Android 9.0 required for GLOBAL_ACTION_LOCK_SCREEN
         targetSdk = 35
-        versionCode = 4
-        versionName = "1.4"
+        versionCode = 5
+        versionName = "1.5"
     }
 
     buildTypes {

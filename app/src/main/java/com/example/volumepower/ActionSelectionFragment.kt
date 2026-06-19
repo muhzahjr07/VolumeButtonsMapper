@@ -74,7 +74,14 @@ class ActionSelectionFragment : Fragment() {
                 val textView = view.findViewById<android.widget.TextView>(android.R.id.text1)
                 val appInfo = getItem(position)
                 textView.text = appInfo?.loadLabel(pm)
-                textView.setTextColor(android.graphics.Color.BLACK)
+                
+                val currentNightMode = context.resources.configuration.uiMode and android.content.res.Configuration.UI_MODE_NIGHT_MASK
+                if (currentNightMode == android.content.res.Configuration.UI_MODE_NIGHT_YES) {
+                    textView.setTextColor(android.graphics.Color.WHITE)
+                } else {
+                    textView.setTextColor(android.graphics.Color.BLACK)
+                }
+
                 val icon = appInfo?.loadIcon(pm)
                 if (icon != null) {
                     val size = (32 * context.resources.displayMetrics.density).toInt()
@@ -86,7 +93,7 @@ class ActionSelectionFragment : Fragment() {
             }
         }
         
-        androidx.appcompat.app.AlertDialog.Builder(requireContext())
+        com.google.android.material.dialog.MaterialAlertDialogBuilder(requireContext())
             .setTitle("Select App")
             .setAdapter(adapter) { _, which ->
                 val pkg = appsList[which].activityInfo.packageName

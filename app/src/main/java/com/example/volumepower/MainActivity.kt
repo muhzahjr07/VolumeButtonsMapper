@@ -490,7 +490,7 @@ class ThemesFragment : Fragment() {
                 return@setOnClickListener
             }
             
-            androidx.appcompat.app.AlertDialog.Builder(requireContext())
+            val dialog = com.google.android.material.dialog.MaterialAlertDialogBuilder(requireContext())
                 .setTitle("Confirm App Icon Change")
                 .setMessage("Are you sure you want to change the system App Icon? The application will restart to apply the changes.")
                 .setPositiveButton("Restart Now") { _, _ ->
@@ -498,13 +498,19 @@ class ThemesFragment : Fragment() {
                 }
                 .setNegativeButton("Cancel", null)
                 .show()
+
+            val currentNightMode = resources.configuration.uiMode and android.content.res.Configuration.UI_MODE_NIGHT_MASK
+            if (currentNightMode == android.content.res.Configuration.UI_MODE_NIGHT_YES) {
+                dialog.getButton(androidx.appcompat.app.AlertDialog.BUTTON_POSITIVE).setTextColor(android.graphics.Color.WHITE)
+                dialog.getButton(androidx.appcompat.app.AlertDialog.BUTTON_NEGATIVE).setTextColor(android.graphics.Color.WHITE)
+            }
         }
         
         val backCallback = object : androidx.activity.OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
                 val activeLogo = prefs.getString("app_splash_logo", "lush_green.png") ?: "lush_green.png"
                 if (pendingLogo != activeLogo) {
-                    androidx.appcompat.app.AlertDialog.Builder(requireContext())
+                    val dialog = com.google.android.material.dialog.MaterialAlertDialogBuilder(requireContext())
                         .setTitle("Unsaved Icon Change")
                         .setMessage("You have selected a new App Icon but haven't applied it. Would you like to apply the change now or discard it?")
                         .setPositiveButton("Apply Change") { _, _ ->
@@ -516,6 +522,12 @@ class ThemesFragment : Fragment() {
                             requireActivity().onBackPressedDispatcher.onBackPressed()
                         }
                         .show()
+
+                    val currentNightMode = resources.configuration.uiMode and android.content.res.Configuration.UI_MODE_NIGHT_MASK
+                    if (currentNightMode == android.content.res.Configuration.UI_MODE_NIGHT_YES) {
+                        dialog.getButton(androidx.appcompat.app.AlertDialog.BUTTON_POSITIVE).setTextColor(android.graphics.Color.WHITE)
+                        dialog.getButton(androidx.appcompat.app.AlertDialog.BUTTON_NEGATIVE).setTextColor(android.graphics.Color.WHITE)
+                    }
                 } else {
                     isEnabled = false
                     requireActivity().onBackPressedDispatcher.onBackPressed()
@@ -668,7 +680,7 @@ class AdvancedFragment : PreferenceFragmentCompat() {
         }
 
         findPreference<androidx.preference.Preference>("reset_defaults")?.setOnPreferenceClickListener {
-            androidx.appcompat.app.AlertDialog.Builder(requireContext())
+            val dialog = com.google.android.material.dialog.MaterialAlertDialogBuilder(requireContext())
                 .setTitle("Confirm Reset to Default")
                 .setMessage("Are you sure you want to reset all settings to their default values? This will restore the default button mappings, haptic preferences, background theme, and system app icon. The application will restart to apply these changes.")
                 .setPositiveButton("Reset Now") { _, _ ->
@@ -685,6 +697,12 @@ class AdvancedFragment : PreferenceFragmentCompat() {
                 }
                 .setNegativeButton("Cancel", null)
                 .show()
+
+            val currentNightMode = resources.configuration.uiMode and android.content.res.Configuration.UI_MODE_NIGHT_MASK
+            if (currentNightMode == android.content.res.Configuration.UI_MODE_NIGHT_YES) {
+                dialog.getButton(androidx.appcompat.app.AlertDialog.BUTTON_POSITIVE).setTextColor(android.graphics.Color.WHITE)
+                dialog.getButton(androidx.appcompat.app.AlertDialog.BUTTON_NEGATIVE).setTextColor(android.graphics.Color.WHITE)
+            }
             true
         }
 
