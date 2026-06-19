@@ -7,6 +7,10 @@ android {
     namespace = "risk.tech.volumebuttons"
     compileSdk = 35
 
+    androidResources {
+        ignoreAssetsPattern = "!.svn:!.git:!.ds_store:!*.scc:.*:<dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~:!screens:!recording"
+    }
+
     defaultConfig {
         applicationId = "risk.tech.volumebuttons"
         minSdk = 28 // Android 9.0 required for GLOBAL_ACTION_LOCK_SCREEN
