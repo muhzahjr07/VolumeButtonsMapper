@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "risk.tech.volumebuttons"
-    compileSdk = 35
+    compileSdk = 36
 
     androidResources {
         ignoreAssetsPattern = "!.svn:!.git:!.ds_store:!*.scc:.*:<dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~:!screens:!recording"
@@ -14,9 +14,9 @@ android {
     defaultConfig {
         applicationId = "risk.tech.volumebuttons"
         minSdk = 28 // Android 9.0 required for GLOBAL_ACTION_LOCK_SCREEN
-        targetSdk = 35
-        versionCode = 5
-        versionName = "1.5"
+        targetSdk = 36
+        versionCode = 6
+        versionName = "1.6"
     }
 
     buildTypes {
