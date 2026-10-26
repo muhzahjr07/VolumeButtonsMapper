@@ -110,7 +110,7 @@ Configure custom haptic vibration feedback for every button press. Features a li
 ### Prerequisites
 
 * **Android Studio**: Ladybug / Koala (or newer) recommended.
-* **Android SDK**: Target SDK 35 (Minimum SDK 28 / Android 9.0+).
+* **Android SDK**: Target SDK 36 (Minimum SDK 28 / Android 9.0+).
 * **JDK**: Java 17 / Java 11.
 
 ### Installation & Build
