@@ -152,4 +152,4 @@ VolumeButtonsMapper/
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
+Developed by Risk Technologies © 2026. All Rights Reserved.
